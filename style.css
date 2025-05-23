@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #004080;
+    padding: 20px 20px;
+    color: #fff;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Logo */
+   .logo img {
+    height: 70px;
+    width: 70px;
+    
+  }
+  
+  /* Search Bar */
+  .search-bar input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  /* Navbar */
+  .navbar ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .navbar ul li {
+      
+    margin-left: 40px;
+  }
+  
+  .navbar ul li a {
+    float: right;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px
+  }
+  
+  .navbar ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .slideshow {
+    position: relative;
+    max-width: 100%;
+    height:100%;
+    overflow: hidden;
+  }
+  
+  
+  .carousel-item img{
+    width: 100%;
+    height: 650px;
+  }
+  
+  /* Overlay Text */
+  
+  .overlay-text{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: purple;
+    font-style:oblique;
+    font-family:'Times New Roman', Times, serif;
+
+  }
+  .overlay-text h1 {
+    font-size: 50px;
+    font-weight:500;
+    
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px;
+    max-width:100%;
+    margin: auto;
+    background-color:aliceblue;
+}
+
+/* Style for the left content */
+.content {
+    width: 60%;
+    padding-right: 20px;
+    
+}
+
+/* Style for the right image */
+
+.image-container img{
+    max-width:200px;
+    height: 250px;
+    border-radius: 10px;
+    
+}
+
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    font-size: 20px;
+    
+    margin: 0;
+    padding: 0;
+    
+}
+
+.content h2 {
+    color:#0056b3;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    
+
+}
+
+
+.programs h1{
+  
+  padding: 20px;
+  padding-left: 200px;
+  font-size:50px;
+  color:brown;
+
+}
+.box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin: auto;
+  background-color:gainsboro;
+}
+.school-box {
+  background-color:azure;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.school-box:hover {
+  transform: scale(1.05);
+}
+.school-image {
+  width: 100%;
+  height: 200px;
+  object-fit:cover;
+}
+.school-content {
+  padding: 15px;
+}
+.school-heading {
+  font-size: 1.5em;
+  color:brown;
+  margin: 0 0 10px;
+  
+}
+.school-description {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.6;
+}
+
+
+.admissions{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px;
+    max-width:100%;
+    margin: auto;
+    background-color:ghostwhite;
+}
+.text{
+  width: 70%;
+  padding-right: 20px;
+}
+.text h2{
+  color:#0056b3;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.admissions-image img{
+  max-width:400px;
+  height: 300px;
+  border-radius: 10px;
+    
+}
+
+.apply-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:#0056b3;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  border-radius: 5px;
+  transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+
+.placement-section h2 {
+  text-align: left;
+  padding-left: 100px;
+  margin: 20px 0;
+  color:darkred;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.placement-section h1 {
+  text-align: center;
+  color:black;
+  font-size: 60px;
+  font-family:'Times New Roman', Times, serif;
+  
+  font-weight: normal;
+}
+
+.placement-section {
+  padding: 30px;
+  background-color:cadetblue;
+}
+
+.slider-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 10px;
+}
+
+.logo-slider {
+  display: inline-flex;
+  align-items: center;
+  animation: slide 20s linear infinite;
+}
+
+.logo-slider img {
+  width: 150px;
+  height: auto;
+  margin: 0 15px;
+}
+
+@keyframes slide {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-50%);
+  }
+}
+
+
+.gallery-section {
+  padding: 20px;
+  text-align: center;
+  background-color:lavender;
+}
+
+.gallery-section h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color:brown;
+  text-align: left;
+  padding-left: 50px;
+
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+footer {
+  background-color:#2c3e50;
+  color: #f1f1f1;
+  padding: 30px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px 20px;
+}
+
+.footer-section h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color:brown;
+  
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-media a {
+  display: block;
+  color: #f1f1f1;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 12px;
+  border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+  margin: 0;
+}

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Placement Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        h2{
+            padding-left: 100px;
+            color: blueviolet;
+            font-size:30px;
+        }
+        header {
+            background-color: #2C3E50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .section {
+            margin: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #2C3E50;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .placement-overview {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .placement-overview img {
+            width: 550px;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-left: 20px;
+        }
+        .placement-overview p {
+            font-family: Arial,sans-serif;
+            font-size: 18px;
+            color: #7f8c8d;
+            line-height: 1.6;
+            width: 90%;
+        }
+        .placement-stats table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .placement-stats th, .placement-stats td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        .placement-stats th {
+            background-color: #2980b9;
+            color: white;
+        }
+        .placement-stats td {
+            background-color: #f9f9f9;
+        }
+        .placement-stats tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .company-logos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .company-logo {
+            width: 200px;
+            margin: 10px;
+            text-align: center;
+        }
+        .company-logo img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .testimonial-card {
+            background-color: #ecf0f1;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .testimonial-card p {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        .testimonial-card h3 {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #2C3E50;
+        }
+        .student-info {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .student-info h3 {
+            color: #2C3E50;
+            text-align: center;
+        }
+        .student-info p {
+            font-size: 16px;
+            color: #7f8c8d;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .industrial-visits {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .industrial-visits img {
+            height: 200px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .industrial-visits::-webkit-scrollbar {
+            height: 8px;
+        }
+        .industrial-visits::-webkit-scrollbar-thumb {
+            background: #2980b9;
+            border-radius: 10px;
+        }
+        .industrial-visits::-webkit-scrollbar-track {
+            background: #f4f4f4;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1> Placements</h1>
+    </header>
+
+    <!-- Placement Overview Section -->
+    <div class="section placement-overview">
+        <div>
+            <h2>Placement Overview</h2>
+            <p>
+                The placement cell at our university is dedicated to helping students secure job opportunities with top recruiters across various industries. Through industry collaborations, career fairs, and skill-building workshops, students are equipped with the knowledge and resources needed to excel in their careers. Each year, numerous students are successfully placed with competitive packages that highlight the university's strong industry ties and commitment to excellence.
+                Our placement process begins early in a student’s academic journey.
+                 The university conducts pre-placement workshops that cover essential skills, including resume building, interview preparation, and communication skills. We also have strong industry collaborations, where companies from sectors like technology, finance, engineering, consulting, and more visit the campus to recruit talented students.
+                In addition to this, internships are encouraged as they offer students the opportunity to gain hands-on experience in their chosen fields. Internships not only allow students to apply their academic knowledge in real-world scenarios, but they also help students build professional networks and improve their chances of securing full-time positions after graduation.
+            </p>
+        </div>
+        <img src="../images/university img 1.jpg" alt="Placement Image">
+    </div>
+
+    <!-- Placement Statistics Section -->
+    <div class="section placement-stats">
+        <h2>Placement Statistics</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Average Package</th>
+                    <th>Placement Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2023</td>
+                    <td>$80,000</td>
+                    <td>95%</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>$75,000</td>
+                    <td>90%</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>$70,000</td>
+                    <td>92%</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>$65,000</td>
+                    <td>89%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+
+    <!-- Top Recruiters Section -->
+    <div class="section">
+        <h2>Top Recruiters</h2>
+        <div class="company-logos">
+            <div class="company-logo"><img src="../images/Accenture.png" alt="Company 1"></div>
+            <div class="company-logo"><img src="../images/Cognizant.jpg" alt="Company 2"></div>
+            <div class="company-logo"><img src="../images/adobe.webp" alt="Company 3"></div>
+            <div class="company-logo"><img src="../images/amazon.png" alt="Company 4"></div>
+            <div class="company-logo"><img src="../images/flipkart.png" alt="Company 5"></div>
+            <div class="company-logo"><img src="../images/deloitte.jpg" alt="Company 6"></div>
+            <div class="company-logo"><img src="../images/Google.webp" alt="Company 7"></div>
+            <div class="company-logo"><img src="../images/hcl.png" alt="Company 8"></div>
+            <div class="company-logo"><img src="../images/Infosys.png" alt="Company 9"></div>
+            <div class="company-logo"><img src="../images/tcs.png" alt="Company 10"></div>
+            <div class="company-logo"><img src="../images/tech mahindra.png" alt="Company 11"></div>
+            <div class="company-logo"><img src="../images/Wipro.svg" alt="Company 12"></div>
+            
+
+        </div>
+    </div>
+    <h2>Student Testimonials</h2>
+    <!-- Student Testimonials Section -->
+    <div class="section testimonials">
+        
+        <div class="testimonial-card">
+            <img src="./images/student1.jpg" alt="Student 1">
+            <h3>Ana</h3>
+            <p>"The placement process was smooth, and the support I received from the university was amazing!"</p>
+            
+        </div>
+        <div class="testimonial-card">
+            <img src="./images/student3.jpg" alt="Student 2">
+            <h3>Stella</h3>
+            <p>"I am thankful for the opportunities I received through the university's placement cell. They made all the difference!"</p>
+           
+        </div>
+        <div class="testimonial-card">
+            <img src="./images/student4.png" alt="Student 3">
+            <h3>JohnSon</h3>
+            <p>"The career guidance and training sessions provided were incredibly helpful during the placement season!"</p>
+            
+        </div>
+        <div class="testimonial-card">
+            <img src="./images/student5.png" alt="Student 4">
+            <h3>Amelia</h3>
+            <p>"The placement opportunities at this university are exceptional, and I am grateful for being part of such a great institution!"</p>
+            
+        </div>
+        <div class="testimonial-card">
+            <img src="./images/student6.png" alt="Student 5">
+            <h3>Peter</h3>
+            <p>"Thanks to the university's extensive network, I landed a job with a top global firm!"</p>
+            
+        </div>
+    </div>
+
+    <!-- Student Information Section -->
+    <div class="section student-info">
+        <h3>Preplacement training</h3>
+        <p style="font-family: Arial,sans-serif; font-size: 18px;">
+            Pre-Placement Training (PPT) is a crucial part of the university's Placement Support Program, designed to prepare students for the competitive job market. 
+            The training typically takes place before the placement season begins and aims to equip students with the skills necessary to secure their desired job offers.
+            Pre-Placement Training ensures that students are not only academically qualified but also prepared in terms of personal development, interview techniques, and industry knowledge, giving them the best possible chance for success during the placement process.
+            our university mainly focuses on the company requirements and trains the students according to it.During the journey the students gains the confidence and ability to attend the interviews and made their life colourful. 
+         </p>
+    </div>
+
+    <!-- Industrial Visits Section -->
+    <div class="section">
+        <h2>Industrial Visits / Professional Practice</h2>
+        
+            <p style="font-family: Arial,sans-serif; font-size: 18px; color: #7f8c8d;"> Industrial Visits and Professional Practice are integral components of a college’s curriculum, designed to bridge the gap between academic learning and real-world application. These activities expose students to the working environment of industries, 
+                help them understand the practical implementation of theoretical knowledge, and enhance their professional skills.
+                Industrial visits provide students with the opportunity to visit factories, research labs, or corporate offices to witness firsthand the operations, technologies, and processes that drive various industries.
+                 <br>
+
+             Professional practice refers to the application of skills and knowledge in a real-world, professional setting, typically through internships or projects. 
+                    For students, professional practice offers an essential foundation for their careers and is often a requirement before graduation.</p>
+
+            <div class="industrial-visits">
+
+                <img src="./images/iv1.png" alt="Visit 1">
+                <img src="./images/iv2.png" alt="Visit 2">
+                
+                <img src="./images/iv4.png" alt="Visit 4">
+                <img src="./images/iv.jpg" alt="Visit 5">
+                <img src="./images/inter.jpg" alt="gd">
+                <img src="./images/inter2.jpg" alt="Visit 5">
+                <img src="./images/inter3.jpg" alt="gd">
+            </div>
+    </div>
+
+   
+
+</body>
+</html>
